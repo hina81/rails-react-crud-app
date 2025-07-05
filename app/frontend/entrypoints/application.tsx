@@ -1,9 +1,14 @@
+import App from "@/components/App";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import HelloWorld from "@/components/HelloWorld";
+
+const container = document.getElementById("root")!;
+const root = createRoot(container);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const root = document.getElementById("root");
-  if (root) {
-    createRoot(root).render(<HelloWorld />);
-  }
+  root.render(
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
 });
