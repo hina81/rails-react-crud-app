@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 type Event = {
   id: number;
   event_type: string;
@@ -21,9 +23,11 @@ export const EventList = ({ events }: EventListProps) => {
 
     return eventArray.map((event) => (
       <li key={event.id}>
-        {event.event_date}
-        {" - "}
-        {event.event_type}
+        <Link to={`/events/${event.id}`}>
+          {event.event_date}
+          {" - "}
+          {event.event_type}
+        </Link>
       </li>
     ));
   };

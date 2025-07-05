@@ -1,5 +1,10 @@
 import Editor from "./Editor";
+import { Routes, Route } from "react-router";
 
-export default function App() {
-  return <Editor />;
-}
+const App = () => (
+  <Routes>
+    <Route path="/events/*" element={<Editor />} />
+  </Routes>
+);
+
+export default App;
