@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get "up" => "rails/health#show", as: :rails_health_check
+  root to: "home#index"
 
-  root "home#index"
+  namespace :api do
+    resources :events, only: %i[index show create destroy update]
+  end
 end
