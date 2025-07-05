@@ -1,3 +1,4 @@
+import "./App.css";
 import Editor from "./Editor";
 import { Routes, Route } from "react-router";
 

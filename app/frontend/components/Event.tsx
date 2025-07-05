@@ -22,7 +22,7 @@ export const Event = ({ events }: EventProps) => {
   }
 
   return (
-    <>
+    <div className="eventContainer">
       <h2>
         {event.event_date}
         {" - "}
@@ -48,6 +48,6 @@ export const Event = ({ events }: EventProps) => {
           <strong>Published:</strong> {event.published ? "yes" : "no"}
         </li>
       </ul>
-    </>
+    </div>
   );
 };

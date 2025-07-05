@@ -33,7 +33,7 @@ export const EventList = ({ events }: EventListProps) => {
   };
 
   return (
-    <section>
+    <section className="eventList">
       <h2>Events</h2>
       <ul>{renderEvents(events)}</ul>
     </section>
