@@ -12,7 +12,13 @@ export default defineConfig({
   },
   plugins: [RubyPlugin(), react()],
   server: {
-    hmr: true,
+    hmr: {
+      protocol: "ws",
+      host: "localhost",
+      port: 3036,
+      clientPort: 3036,
+    },
+    origin: "http://localhost:3000",
   },
   resolve: {
     alias: {
