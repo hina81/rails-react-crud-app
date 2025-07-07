@@ -22,7 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# rails_react_crud_app
+# rails-react-crud-app
 
 ```
 $ foreman start -f Procfile.dev
