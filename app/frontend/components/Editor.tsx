@@ -3,6 +3,7 @@ import Header from "./Header";
 import { EventList } from "./EventList";
 import { Event } from "./Event";
 import { Routes, Route } from "react-router";
+import { EventForm } from "./EventForm";
 
 const Editor = () => {
   const [events, setEvents] = useState([]);
@@ -39,6 +40,7 @@ const Editor = () => {
           <>
             <EventList events={events} />
             <Routes>
+              <Route path="/new" element={<EventForm />} />
               <Route path="/:id" element={<Event events={events} />} />
             </Routes>
           </>

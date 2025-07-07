@@ -23,3 +23,8 @@ Things you may want to cover:
 
 * ...
 # rails_react_crud_app
+
+```
+$ foreman start -f Procfile.dev
+```
+localhost:3000 で起動

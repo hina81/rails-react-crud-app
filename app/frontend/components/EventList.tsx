@@ -34,7 +34,10 @@ export const EventList = ({ events }: EventListProps) => {
 
   return (
     <section className="eventList">
-      <h2>Events</h2>
+      <h2>
+        Events
+        <Link to="/events/new">New Event</Link>
+      </h2>
       <ul>{renderEvents(events)}</ul>
     </section>
   );
